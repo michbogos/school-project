@@ -11,15 +11,63 @@
     <script src="anime.min.js"></script>
 </head>
 <body>
-        <h1>Kokain <br/> <h1>-Eine Anleitung</h1></h1>
+        <h1 class="main-heading">Kokain <br/> <h1 class = "main-heading">-Eine Anleitung</h1></h1>
+        <p class = "text-section" style="padding-bottom: 20vh;">- Von Carl Marcus Prechtler und Bogosta Michael</p>
 
-        <div class = "spacer"></div>
+        <div class = "flex">
+            <p class = "text-section">
+                Kokain oder Cocain  ist ein starkes Stimulans und Betäubungsmittel. Es findet weltweit Anwendung als Rauschdroge mit hohem psychischen, aber keinem physischen Abhängigkeitspotenzial.
+            </p>
+            <img class = "molecule-image" src="assets/cocaine.svg" width="500"/>
+        </div>
 
-        <div class = "text-section">
-            <p>hkhlkhgdscldghagljkdfghkjdfghdfjkgchdgjkfhkdsjgcjgklaj,gjggglkj.jzg,.g,gfggmvz.ngcngf,gncf,</p>
+        <h2>Geschichte</h2>
+
+        <div class = "flex text-section">
+                <ul>
+                    <li>Die ersten Cocasträucher kamen 1750 aus Südamerika nach Europa.</li>
+                </ul>
+                <ul>
+                    <li>Ab 1879 wurde Kokain verwendet, um Morphinabhängigkeit zu behandeln.</li>
+                </ul>
+        </div>
+
+        <h2>Vorkommen und Gewinnung</h2>
+
+        <div class = "flex">
+            <p class = "text-section">Die Cocapflanze als Quelle des Kokains wird in Südamerika (Bolivien, Peru und Kolumbien) in einer Höhe zwischen 600 und 1000 m angebaut.
+                Zur Kokaingewinnung unter Laborbedingungen werden die Blätter des Cocastrauchs zerkleinert und eingeweicht. Die Alkaloide werden mit Lösungsmitteln extrahiert und der Auszug verseift (Esterspaltung).
+            </p>
+            <img src="./assets/koka1.jpg" height=300/>
         </div>
 </body>
-    <script>
 
-    </script>
+<script type = "text/javascript">
+    let timeline = anime.timeline({
+        easing:"easeOutExpo",
+        duration:2000,
+    })
+
+    timeline.add({
+        targets:".main-heading",
+        top:"0%",
+        duration:2000,
+      });
+
+    timeline.add({
+        targets:".text-section",
+        color:"#FFF",
+        delay:anime.stagger(2000)
+    });
+
+    timeline.add({
+        targets:".molecule-image line",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1500,
+        direction: 'alternate',
+        loop: true
+    })
+    console.log("done")
+</script>
 </html>
