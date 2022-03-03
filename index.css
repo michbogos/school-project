@@ -19,6 +19,7 @@ html {
 body{
     height:100%;
     padding:2vw;
+    padding-right: 1vw;
     background-image: linear-gradient(45deg, #fcda90 0%, #eb7ee2 100%);
     height: 100%;
     background-size: 200%, 200%;
@@ -52,8 +53,13 @@ h2{
     padding-bottom: 5%;
 }
 
-.molecule-image{
+.image{
     filter:  brightness(0) invert(1);
+    position:relative;
+}
+
+.path2313{
+    stroke-dashoffset: 100;
 }
 
 .spacer{

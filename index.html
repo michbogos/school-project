@@ -18,7 +18,7 @@
             <p class = "text-section">
                 Kokain oder Cocain  ist ein starkes Stimulans und Betäubungsmittel. Es findet weltweit Anwendung als Rauschdroge mit hohem psychischen, aber keinem physischen Abhängigkeitspotenzial.
             </p>
-            <img class = "molecule-image" src="assets/cocaine.svg" width="500"/>
+            <img class = "image" src="assets/cocaine.svg" width="500"/>
         </div>
 
         <h2>Geschichte</h2>
@@ -38,7 +38,16 @@
             <p class = "text-section">Die Cocapflanze als Quelle des Kokains wird in Südamerika (Bolivien, Peru und Kolumbien) in einer Höhe zwischen 600 und 1000 m angebaut.
                 Zur Kokaingewinnung unter Laborbedingungen werden die Blätter des Cocastrauchs zerkleinert und eingeweicht. Die Alkaloide werden mit Lösungsmitteln extrahiert und der Auszug verseift (Esterspaltung).
             </p>
-            <img src="./assets/koka1.jpg" height=300/>
+            <img class = "image" src="./assets/coca-plant.svg" width=300/>
+        </div>
+
+        <h2>Konsumformen</h2>
+
+        <div class = "flex">
+            <p class = "text-section">Die Cocapflanze als Quelle des Kokains wird in Südamerika (Bolivien, Peru und Kolumbien) in einer Höhe zwischen 600 und 1000 m angebaut.
+                Zur Kokaingewinnung unter Laborbedingungen werden die Blätter des Cocastrauchs zerkleinert und eingeweicht. Die Alkaloide werden mit Lösungsmitteln extrahiert und der Auszug verseift (Esterspaltung).
+            </p>
+            <img src="./assets/sniff.svg" width=500/>
         </div>
 </body>
 
@@ -61,8 +70,8 @@
     });
 
     timeline.add({
-        targets:".molecule-image line",
-        strokeDashoffset: [anime.setDashoffset, 0],
+        targets:".path2313",
+        strokeDashoffset: [0, anime.setDashoffset],
         easing: 'easeInOutSine',
         duration: 1500,
         direction: 'alternate',
